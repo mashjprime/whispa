@@ -1,0 +1,1 @@
+"""Whispa tests package."""

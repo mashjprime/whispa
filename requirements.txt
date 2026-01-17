@@ -1,0 +1,26 @@
+# Core ASR
+faster-whisper>=1.0.0
+
+# Audio
+sounddevice>=0.4.6
+numpy>=1.24.0
+
+# PyTorch with CUDA (user should install via: pip install torch --index-url https://download.pytorch.org/whl/cu121)
+torch>=2.0.0
+
+# UI
+PyQt6>=6.5.0
+
+# System Integration
+pynput>=1.7.6
+pyperclip>=1.8.2
+PyDirectInput>=1.0.4
+
+# Windows-specific
+pywin32>=306
+
+# Development (optional)
+# pytest>=7.0.0
+# pytest-qt>=4.2.0
+# black>=23.0.0
+# ruff>=0.1.0
