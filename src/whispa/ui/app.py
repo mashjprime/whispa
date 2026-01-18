@@ -147,9 +147,7 @@ class WhispaApplication:
 
     def _on_transcription_completed(self, text: str) -> None:
         """Handle transcription completed."""
-        if self.tray and len(text) > 0:
-            preview = text[:50] + "..." if len(text) > 50 else text
-            self.tray.show_notification("Transcribed", preview)
+        pass  # Text has been injected, no notification needed
 
     def _on_transcription_error(self, error: str) -> None:
         """Handle transcription error."""
