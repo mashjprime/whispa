@@ -5,7 +5,7 @@ A Windows voice dictation application using local Whisper models. Similar to Wis
 ## Features
 
 - **Local Speech Recognition**: Uses faster-whisper for fast, accurate transcription on your GPU
-- **Push-to-Talk**: Toggle mode with customizable hotkey (default: Ctrl+Shift+Space)
+- **Push-to-Talk**: Hold-to-record with customizable hotkey (default: Ctrl+Win)
 - **System-Wide**: Works in any Windows application via clipboard injection
 - **Voice Activity Detection**: Silero-VAD filters silence to prevent hallucinations
 - **Text Processing**:
@@ -27,7 +27,7 @@ A Windows voice dictation application using local Whisper models. Similar to Wis
 
 1. Clone or download the repository:
 ```bash
-git clone https://github.com/yourusername/whispa.git
+git clone https://github.com/mashjprime/whispa.git
 cd whispa
 ```
 
@@ -63,12 +63,14 @@ Whispa runs in the system tray. Look for the circular icon.
 
 ### Basic Usage
 
-1. Press **Ctrl+Shift+Space** to start recording
+1. **Hold Ctrl+Win** to start recording
 2. Speak your text
-3. Press **Ctrl+Shift+Space** again to stop and transcribe
+3. **Release Ctrl+Win** to stop and transcribe
 4. Text is automatically typed at your cursor position
 
 Press **Escape** to cancel recording without transcription.
+
+> **Note:** On first use, Whispa will download the Whisper model (~1.6GB). This may take several minutes depending on your connection. The app will appear to be processing during this time.
 
 ### Voice Commands
 
@@ -101,8 +103,8 @@ Access settings by double-clicking the tray icon or right-click → Settings.
 - Set language (auto-detect or specific)
 
 **Hotkeys:**
-- Customize activation hotkey
-- Toggle vs hold mode
+- Customize activation hotkey (default: Ctrl+Win)
+- Toggle vs hold mode (default: hold)
 
 **Text Processing:**
 - Enable/disable filler word removal
