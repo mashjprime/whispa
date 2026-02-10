@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\AI\\\\whispa\")",
+      "Bash(taskkill:*)",
+      "Bash(tasklist:*)",
+      "Bash(for pid in 47496 67472 19464 102772 73072 72044 38272)",
+      "Bash(do taskkill /F /PID $pid)",
+      "Bash(done)",
+      "Bash(cmd //c \"taskkill /F /PID 57844\")",
+      "Bash(wmic process where \"name=''python.exe''\" get ProcessId,ParentProcessId,CommandLine)",
+      "Bash(cmd //c \"taskkill /F /IM python.exe\")",
+      "Bash(dir /s /b *.json *.md)",
+      "Bash(timeout:*)",
+      "Bash(ping:*)",
+      "Bash(wmic process where \"commandline like ''%whispa%''\" get processid)",
+      "Bash(powershell -Command \"Get-Process python -ErrorAction SilentlyContinue | Select-Object Id, ProcessName\")",
+      "Bash(powershell -Command \"Get-Process python -ErrorAction SilentlyContinue | Stop-Process -Force\")",
+      "Bash(nvidia-smi:*)",
+      "Bash(pip install:*)",
+      "Bash(git init:*)"
+    ]
+  }
+}
